@@ -827,4 +827,693 @@ nav a:hover {
 .active {
   border-bottom: 3px solid #ffeb3b;
 }
+/* ====== BAGIAN KONTAK (VERSI KEREN & MODERN) ====== */
+.contact {
+  width: 90%;
+  max-width: 800px;
+  margin: 4rem auto;
+  background: linear-gradient(180deg, #ffffff, #e3f2fd);
+  padding: 3rem 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(33, 150, 243, 0.2);
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  color: #0b63b0;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+  position: relative;
+}
+
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #2196f3, #64b5f6);
+  margin: 0.8rem auto;
+  border-radius: 2px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact label {
+  font-family: "Times New Roman", serif;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #90caf9;
+  border-radius: 10px;
+  font-family: "Times New Roman", serif;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 12px rgba(33, 150, 243, 0.4);
+  outline: none;
+  transform: scale(1.02);
+}
+
+.contact textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.contact button {
+  background: linear-gradient(90deg, #1976d2, #42a5f5);
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 14px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(33, 150, 243, 0.3);
+}
+
+.contact button:hover {
+  background: linear-gradient(90deg, #42a5f5, #64b5f6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.5);
+}
+/* ====== KONTAK UPGRADE (2 KOLOM, KEREN & RESPONSIF) ====== */
+.contact-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #e3f2fd, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(33, 150, 243, 0.2);
+  padding: 3rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Kolom Kiri */
+.contact-info {
+  flex: 1 1 350px;
+}
+
+.contact-info h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  color: #0b63b0;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-family: "Times New Roman", serif;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.info-card {
+  background: #ffffff;
+  border-left: 5px solid #2196f3;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(33, 150, 243, 0.15);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  color: #1976d2;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0d47a1;
+  text-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
+
+/* Kolom Kanan */
+.contact-form {
+  flex: 1 1 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3 {
+  font-family: "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: #0b63b0;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #333;
+  font-family: "Times New Roman", serif;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 2px solid #90caf9;
+  font-family: "Times New Roman", serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 12px rgba(33, 150, 243, 0.4);
+  transform: scale(1.02);
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.btn-send {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #1976d2, #42a5f5);
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+  transition: all 0.4s ease;
+}
+
+.btn-send:hover {
+  background: linear-gradient(90deg, #42a5f5, #64b5f6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.6);
+}
+
+/* Responsif */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .contact-info, .contact-form {
+    flex: 1 1 100%;
+  }
+}
+/* ===== KONTAK DENGAN ICON (PROFESIONAL) ===== */
+.contact-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #e3f2fd, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(33, 150, 243, 0.2);
+  padding: 3rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Kolom Kiri */
+.contact-info {
+  flex: 1 1 350px;
+}
+
+.contact-info h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  color: #0b63b0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info p {
+  font-family: "Times New Roman", serif;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-left: 5px solid #2196f3;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(33, 150, 243, 0.15);
+  transition: all 0.3s ease;
+}
+
+.info-card i {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-right: 15px;
+}
+
+.info-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  color: #1976d2;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0d47a1;
+  transform: translateY(-4px);
+  text-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
+
+/* Kolom Kanan */
+.contact-form {
+  flex: 1 1 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3 {
+  font-family: "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: #0b63b0;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #333;
+  font-family: "Times New Roman", serif;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 2px solid #90caf9;
+  font-family: "Times New Roman", serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 12px rgba(33, 150, 243, 0.4);
+  transform: scale(1.02);
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.btn-send {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #1976d2, #42a5f5);
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+  transition: all 0.4s ease;
+}
+
+.btn-send:hover {
+  background: linear-gradient(90deg, #42a5f5, #64b5f6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.6);
+}
+
+/* Responsif */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .contact-info, .contact-form {
+    flex: 1 1 100%;
+  }
+}
+.contact-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #e3f2fd, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(33, 150, 243, 0.2);
+  padding: 3rem;
+}
+
+/* Kolom kiri */
+.contact-info {
+  flex: 1 1 350px;
+}
+
+.contact-info h2 {
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  color: #0b63b0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-left: 5px solid #2196f3;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(33, 150, 243, 0.15);
+  transition: all 0.3s ease;
+}
+
+.info-card i {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-right: 15px;
+}
+
+.info-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.3);
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  color: #1976d2;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0d47a1;
+  transform: translateY(-4px);
+  text-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+}
+
+/* Kolom kanan */
+.contact-form {
+  flex: 1 1 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3 {
+  font-family: "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: #0b63b0;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #333;
+  font-family: "Times New Roman", serif;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 2px solid #90caf9;
+  font-family: "Times New Roman", serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 12px rgba(33, 150, 243, 0.4);
+  transform: scale(1.02);
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.btn-send {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #1976d2, #42a5f5);
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+  transition: all 0.4s ease;
+}
+
+.btn-send:hover {
+  background: linear-gradient(90deg, #42a5f5, #64b5f6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.6);
+}
+/* ===== KONTAK 3D CARD ELEGAN ===== */
+.contact-3d {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #e3f2fd, #ffffff);
+  font-family: "Times New Roman", serif;
+}
+
+.contact-3d h2 {
+  font-size: 2.2rem;
+  color: #0b63b0;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+}
+
+.contact-3d p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 260px;
+  padding: 2rem 1rem;
+  box-shadow: 0 10px 25px rgba(33, 150, 243, 0.2);
+  transition: all 0.4s ease;
+  border-top: 5px solid #2196f3;
+  transform-style: preserve-3d;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(33, 150, 243, 0.35);
+}
+
+.contact-card i {
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover i {
+  color: #42a5f5;
+  text-shadow: 0 0 15px rgba(66, 165, 245, 0.6);
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  color: #0b63b0;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* ===== SOSIAL MEDIA ===== */
+.social-area {
+  margin-top: 3rem;
+}
+
+.social-area a {
+  margin: 0 0.6rem;
+  font-size: 1.6rem;
+  color: #1976d2;
+  transition: all 0.3s ease;
+}
+
+.social-area a:hover {
+  color: #0d47a1;
+  transform: translateY(-5px);
+  text-shadow: 0 0 12px rgba(33, 150, 243, 0.5);
+}
+
+/* Responsif */
+@media (max-width: 900px) {
+  .contact-cards {
+    flex-direction: column;
+  }
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 150, 255, 0.3);
+  transition: all 0.3s ease;
+}
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+.card {
+  background: #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #bebebe,
+              -8px -8px 16px #ffffff;
+}
+body {
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+}
+.profile-pic {
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+  transition: transform 0.3s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+.container {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 25px;
+  padding: 40px;
+}
 
